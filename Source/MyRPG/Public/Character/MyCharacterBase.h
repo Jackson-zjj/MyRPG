@@ -1,0 +1,19 @@
+
+#pragma once
+
+#include "CoreMinimal.h"
+#include "GameFramework/Character.h"
+#include "MyCharacterBase.generated.h"
+
+UCLASS(Abstract)
+class MYRPG_API AMyCharacterBase : public ACharacter
+{
+	GENERATED_BODY()
+
+public:
+	AMyCharacterBase();
+
+protected:
+	virtual void BeginPlay() override;
+	
+};
